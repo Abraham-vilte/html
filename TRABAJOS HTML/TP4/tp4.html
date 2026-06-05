@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscripción a Talleres Extracurriculares</title>
+</head>
+<body>
+
+  <h1>Inscripción a Talleres Extracurriculares</h1>
+  <p>E.P.E.T. N°5 - 2026</p>
+
+  <hr>
+
+  <form method="post" action="#">
+
+    Nombre completo:<br>
+    <input type="text" name="nombre" required minlength="3" placeholder="Ej: el pepe">
+    <br><br>
+
+    Email:<br>
+    <input type="email" name="email" required placeholder="Ej: yo@email.com">
+    <br><br>
+
+    Edad:<br>
+    <input type="number" name="edad" min="12">
+    <br><br>
+
+    Curso:<br>
+    <select name="curso">
+      <option disabled selected value="">-- Seleccioná tu curso --</option>
+      <option value="1">1°</option>
+      <option value="2">2°</option>
+      <option value="3">3°</option>
+      <option value="4">4°</option>
+      <option value="5">5°</option>
+      <option value="6">6°</option>
+      <option value="7">7°</option>
+    </select>
+    <br><br>
+
+    Turno:<br>
+    <input type="radio" name="turno" value="manana"> Mañana
+    <input type="radio" name="turno" value="tarde"> Tarde
+    <br><br>
+
+    Talleres de interés:<br>
+    <input type="checkbox" name="talleres" value="programacion"> Programación<br>
+    <input type="checkbox" name="talleres" value="robotica"> Robótica<br>
+    <input type="checkbox" name="talleres" value="diseno-web"> Diseño Web<br>
+    <input type="checkbox" name="talleres" value="electronica"> Electrónica<br>
+    <br>
+
+    Fecha de inscripción:<br>
+    <input type="date" name="fecha_inscripcion">
+    <br><br>
+
+    Comentarios adicionales:<br>
+    <textarea name="comentarios" rows="4" cols="40" placeholder="¿Alguna consulta?"></textarea>
+    <br><br>
+
+    <input type="submit" value="Inscribirse">
+
+  </form>
+  <p>Tomas Joseph chaile</p>
+  <p>Materia: Laboratorio de Desarrollo IV</p>
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TP5 - Tablas en HTML</title>
+</head>
+<body>
+
+  <!-- EJERCICIO 1: Página con datos personales -->
+
+  <h1>Trabajo Práctico N° 5 - Tablas en HTML</h1>
+
+  <p>
+    En este trabajo práctico se presentan distintas tablas HTML. La primera contiene mis datos personales,
+    la segunda muestra el horario semanal de clases y la tercera es un catálogo de productos tecnológicos.
+  </p>
+
+  <h2>1. Mis datos personales</h2>
+
+  <table border="1">
+    <caption>Datos del alumno</caption>
+    <thead>
+      <tr>
+        <th>Campo</th>
+        <th>Dato</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Nombre completo</td>
+        <td>Juan Pérez</td>
+      </tr>
+      <tr>
+        <td>DNI</td>
+        <td>40.123.456</td>
+      </tr>
+      <tr>
+        <td>Curso</td>
+        <td>4° año</td>
+      </tr>
+      <tr>
+        <td>División</td>
+        <td>A</td>
+      </tr>
+      <tr>
+        <td>Institución</td>
+        <td>E.P.E.T. N° 5</td>
+      </tr>
+      <tr>
+        <td>Año lectivo</td>
+        <td>2026</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <!-- EJERCICIO 2: Horario escolar semanal -->
+
+  <h2>2. Horario Escolar Semanal</h2>
+
+  <table border="1">
+    <caption>Horario semanal de clases - Turno Mañana</caption>
+    <thead>
+      <tr>
+        <th>Hora</th>
+        <th>Lunes</th>
+        <th>Martes</th>
+        <th>Miércoles</th>
+        <th>Jueves</th>
+        <th>Viernes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>08:00 – 08:40</td>
+        <td>Matemática</td>
+        <td>Lengua</td>
+        <td>Física</td>
+        <td>Inglés</td>
+        <td>Historia</td>
+      </tr>
+      <tr>
+        <td>08:40 – 09:20</td>
+        <td>Matemática</td>
+        <td>Lengua</td>
+        <td>Física</td>
+        <td>Inglés</td>
+        <td>Historia</td>
+      </tr>
+      <tr>
+        <td>09:30 – 10:10</td>
+        <td>Lab. Desarrollo</td>
+        <td>Química</td>
+        <td>Ed. Física</td>
+        <td>Matemática</td>
+        <td>Geografía</td>
+      </tr>
+      <tr>
+        <td>10:10 – 10:50</td>
+        <td>Lab. Desarrollo</td>
+        <td>Química</td>
+        <td>Ed. Física</td>
+        <td>Matemática</td>
+        <td>Geografía</td>
+      </tr>
+      <tr>
+        <td>10:50 – 11:30</td>
+        <td>Tecnología</td>
+        <td colspan="2">Taller Integrador</td>
+        <td>Lengua</td>
+        <td>Biología</td>
+      </tr>
+      <tr>
+        <td>11:30 – 12:10</td>
+        <td>Tecnología</td>
+        <td>Formación Ética</td>
+        <td>Arte</td>
+        <td>Lengua</td>
+        <td>Biología</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <!-- EJERCICIO 3: Tabla de productos -->
+
+  <h2>3. Catálogo de Productos</h2>
+
+  <table border="1">
+    <caption>Listado de productos tecnológicos</caption>
+    <thead>
+      <tr>
+        <th>Código</th>
+        <th>Nombre del producto</th>
+        <th>Categoría</th>
+        <th>Precio</th>
+        <th>Stock disponible</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>P001</td>
+        <td>Mouse inalámbrico</td>
+        <td>Periféricos</td>
+        <td>$8.500</td>
+        <td>35</td>
+      </tr>
+      <tr>
+        <td>P002</td>
+        <td>Teclado mecánico</td>
+        <td>Periféricos</td>
+        <td>$22.000</td>
+        <td>18</td>
+      </tr>
+      <tr>
+        <td>P003</td>
+        <td>Monitor LED 24"</td>
+        <td>Pantallas</td>
+        <td>$95.000</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>P004</td>
+        <td>Pendrive 32GB</td>
+        <td>Almacenamiento</td>
+        <td>$4.200</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>P005</td>
+        <td>Auriculares</td>
+        <td>Audio</td>
+        <td>$12.000</td>
+        <td>27</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="4">Total de productos disponibles</td>
+        <td>140</td>
+      </tr>
+    </tfoot>
+  </table>
+  <p>Tomas Joseph chaile</p>
+  <p>Materia: Laboratorio de Desarrollo IV</p>
+</body>
+</html>

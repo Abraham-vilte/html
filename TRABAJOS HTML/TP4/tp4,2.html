@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solicitud de Turno - Taller Mecánico</title>
+</head>
+<body>
+
+  <h1>Solicitud de Turno</h1>
+  <p>Taller Mecánico</p>
+
+  <hr>
+
+  <form method="post" action="#">
+
+    Nombre del cliente:<br>
+    <input type="text" name="nombre_cliente" required placeholder="Ej: juan caldo">
+    <br><br>
+
+    Teléfono de contacto:<br>
+    <input type="tel" name="telefono" required pattern="[0-9]+" placeholder="Ej: 1010101010">
+    <br><br>
+
+    Email:<br>
+    <input type="email" name="email" required placeholder="Ej: papu@email.com">
+    <br><br>
+
+    Marca del vehículo:<br>
+    <input type="text" name="marca" required placeholder="Ej: Ford">
+    <br><br>
+
+    Modelo del vehículo:<br>
+    <input type="text" name="modelo" required placeholder="Ej: Focus">
+    <br><br>
+
+    Tipo de servicio requerido:<br>
+    <input type="radio" name="servicio" value="cambio-aceite"> Cambio de aceite<br>
+    <input type="radio" name="servicio" value="revision-general"> Revisión general<br>
+    <input type="radio" name="servicio" value="frenos"> Frenos<br>
+    <input type="radio" name="servicio" value="otro"> Otro<br>
+    <br>
+
+    Servicios adicionales:<br>
+    <input type="checkbox" name="adicionales" value="lavado"> Lavado del vehículo<br>
+    <input type="checkbox" name="adicionales" value="revision-electrica"> Revisión eléctrica<br>
+    <input type="checkbox" name="adicionales" value="diagnostico"> Diagnóstico computarizado<br>
+    <br>
+
+    Fecha deseada para el turno:<br>
+    <input type="date" name="fecha_turno" required>
+    <br><br>
+
+    Comentarios o descripción del problema:<br>
+    <textarea name="comentarios" rows="4" cols="40" required minlength="10" placeholder="Describí el problema de tu vehículo..."></textarea>
+    <br><br>
+
+    <input type="submit" value="Solicitar Turno">
+
+  </form>
+<p>nombre: Francisco cordoba</p>
+  <p>Materia: Laboratorio de Desarrollo IV</p>
+
+</body>
+</html>

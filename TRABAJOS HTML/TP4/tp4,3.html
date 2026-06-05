@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encuesta sobre Tecnología</title>
+</head>
+<body>
+
+  <h1>Encuesta sobre el uso de la Tecnología</h1>
+  <p>E.P.E.T. N°5 - 2026</p>
+
+  <hr>
+
+  <form method="post" action="#">
+
+    <fieldset>
+      <legend>Datos del estudiante</legend>
+
+      <label for="nombre">Nombre del estudiante:</label><br>
+      <input type="text" id="nombre" name="nombre" required placeholder="Ej: roshi juancalos">
+      <br><br>
+
+      <label for="edad">Edad:</label><br>
+      <input type="number" id="edad" name="edad" required min="10" max="99">
+      <br><br>
+
+      <label for="curso">Curso:</label><br>
+      <select id="curso" name="curso" required>
+        <option disabled selected value="">-- Seleccioná tu curso --</option>
+        <option value="1">1°</option>
+        <option value="2">2°</option>
+        <option value="3">3°</option>
+        <option value="4">4°</option>
+        <option value="5">5°</option>
+        <option value="6">6°</option>
+        <option value="7">7°</option>
+      </select>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend>Dispositivo que usás con mayor frecuencia</legend>
+
+      <input type="radio" id="disp-pc" name="dispositivo" value="computadora" required>
+      <label for="disp-pc">Computadora</label><br>
+
+      <input type="radio" id="disp-cel" name="dispositivo" value="celular">
+      <label for="disp-cel">Celular</label><br>
+
+      <input type="radio" id="disp-tab" name="dispositivo" value="tablet">
+      <label for="disp-tab">Tablet</label>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend>Actividades que realizás con tecnología</legend>
+
+      <input type="checkbox" id="act-estudiar" name="actividades" value="estudiar">
+      <label for="act-estudiar">Estudiar</label><br>
+
+      <input type="checkbox" id="act-jugar" name="actividades" value="jugar">
+      <label for="act-jugar">Jugar</label><br>
+
+      <input type="checkbox" id="act-redes" name="actividades" value="redes-sociales">
+      <label for="act-redes">Redes sociales</label><br>
+
+      <input type="checkbox" id="act-programar" name="actividades" value="programar">
+      <label for="act-programar">Programar</label><br>
+
+      <input type="checkbox" id="act-videos" name="actividades" value="ver-videos">
+      <label for="act-videos">Ver videos</label>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend>Hábitos de uso</legend>
+
+      <label for="horas">Horas promedio de uso por día:</label><br>
+      <select id="horas" name="horas_uso" required>
+        <option disabled selected value="">-- Seleccioná una opción --</option>
+        <option value="menos-1">Menos de 1 hora</option>
+        <option value="1-3">1 a 3 horas</option>
+        <option value="3-5">3 a 5 horas</option>
+        <option value="mas-5">Más de 5 horas</option>
+      </select>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend>Tu opinión</legend>
+
+      <label for="opinion">Opinión sobre la tecnología en la educación:</label><br>
+      <textarea id="opinion" name="opinion" rows="5" cols="40" required minlength="20" placeholder="Escribí tu opinión aquí..."></textarea>
+    </fieldset>
+
+    <br>
+    <input type="submit" value="Enviar encuesta">
+
+  </form>
+
+</body>
+</html>
